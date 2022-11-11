@@ -1,0 +1,102 @@
+*{
+    scroll-behavior: smooth;
+    
+}
+body{
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top:0 ;
+    
+    /* background-color:#c3dfe2; */
+    /* background-color: black; */
+    color: #21B6A8;
+}
+nav .social + p {
+    font-weight: 500;
+    font-size: 48px;
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+    padding: 15px;
+}
+.social{
+    display: flex;
+    
+}
+.social .left{
+    width: 50%;
+    padding: 10px;
+}
+.social .right{
+    width: 50%;
+    padding: 10px0;
+    text-align: right;
+}
+.social .right a{
+    font-size: large;
+    padding: 5px;
+    color: white;
+}
+.social .left a{
+    color: white;
+    padding: 25px;
+}
+
+.social  a:hover{
+    color: #21B6A8;
+} 
+
+.nav_links{
+    width:50%;
+    margin: 0 auto;
+    /* align-items: center; */
+}
+
+nav .nav_links a{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    font-size: 40px;
+    color:white;
+    text-decoration: none;
+    /* margin-left:70px ; */
+    
+}
+nav .nav_links a:hover{
+    /* border:2px solid #21B6A8;
+    border-radius: 25px; */
+    color: #21B6A8;
+    
+}
+nav{
+    height: 100vh;
+    background-image:linear-gradient(
+            rgba(27, 32, 33, 0.5),
+            rgba(27, 32, 33, 0.5)
+    ),url('./media/tryMe.jpg');
+    background-repeat:no-repeat ;
+    background-position:center ;
+    background-size: cover;
+    color: white;;
+    padding:10px;
+    margin-right: 0;
+    /* background-color:  #055a7ea1; */
+    
+}
+.fa-circle-up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 40px;
+
+}
+.fa-circle-up:hover{
+    color: aqua;
+    cursor: pointer;
+    font-size: 48px;
+    transition-duration: .5s;
+
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            body {
+                color: #fff;
+            }
+            .open {
+                /* width: 1px; */
+                background-color: aqua;
+                width: 2.5vh;
+                height: 2.5vh;
+                position: fixed;
+                bottom: 10px;
+                border-radius: 15px;
+                display: grid;
+                align-items: center;
+            }
+            .open div {
+                display: none;
+            }
+            .open:hover {
+                /* display: none; */
+                width: 20vh;
+                height: 20vh;
+                transition-duration: 0.5s;
+            }
+            .open:hover div {
+                display: block;
+                padding: 2.5px;
+                font-size: 15px;
+                text-align: center;
+                width: fit-content;
+                margin: 0 auto;
+                border: 1px solid green;
+                border-radius: 7.5px;
+                transition-duration: 0.5s;
+            }
+            #go_light:hover {
+                background-color: #fff;
+            }
+            #go_dark:hover {
+                background-color: #000;
+            }
+            /* .open div:hover {
+                display: inline;
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="open">
+            <div id="go_dark" onclick="myFunction()">Go Dark</div>
+            <div id="go_light" onclick="LightFunction()">Go light</div>
+        </div>
+        <script>
+            // function changMe() {
+            //     const w = document.getElementById("child");
+            //     w.style.textAlign = "left";
+            //     w.style.transitionDuration = "5s";
+            // }
+
+            // function DarkFunction() {
+            //     var x = document.body;
+            //     x.style.backgroundColor = "#000";
+            //     x.style.transitionDuration = ".5s";
+            //     var m = document.getElementById("map");
+            //     m.style.filter = "invert(100)";
+            //     // var y = document.getElementsByTagName("iframe");                // y.style.backgroundColor = "000";
+            //     // var y=document.getElementsByTagName("iframe");
+            //     // y.style.filter=('invert:100%');
+            // }
+            // function LightFunction() {
+            //     var y = document.body;
+            //     y.style.backgroundColor = "#fff";
+            //     y.style.transitionDuration = ".5s";
+            //     var m = document.getElementById("map");
+            //     m.style.filter = "invert(0%)";
+            // }
+            function myFunction() {
+                var x = document.body;
+                x.style.backgroundColor = "#000";
+                x.style.transitionDuration = ".5s";
+                var m = document.getElementById("map");
+                m.style.filter = "invert(100)";
+                // var y = document.getElementsByTagName("iframe");                // y.style.backgroundColor = "000";
+                // var y=document.getElementsByTagName("iframe");
+                // y.style.filter=('invert:100%');
+            }
+            function LightFunction() {
+                var y = document.body;
+                y.style.backgroundColor = "#fff";
+                y.style.transitionDuration = ".5s";
+                var m = document.getElementById("map");
+                m.style.filter = "invert(0%)";
+            }
+        </script>
+    </body>
+</html>
